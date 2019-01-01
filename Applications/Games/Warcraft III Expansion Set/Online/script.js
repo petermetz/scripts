@@ -17,7 +17,7 @@ var installerImplementation = {
             .wineVersion(LATEST_STAGING_VERSION)
             .wineDistribution("staging")
             .preInstall(function (wine/*, wizard*/) {
-                wine.windowsVersion("winxp");
+                wine.windowsVersion("win10");
                 wine.corefonts();
                 wine.vcrun2015();
             })
