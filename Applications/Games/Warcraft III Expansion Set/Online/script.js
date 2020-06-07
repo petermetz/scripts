@@ -16,6 +16,7 @@ var installerImplementation = {
             .executable("Warcraft III.exe")
             .wineVersion(LATEST_STAGING_VERSION)
             .wineDistribution("staging")
+            .wineArchitecture("amd64")
             .preInstall(function (wine/*, wizard*/) {
                 wine.windowsVersion("win10");
                 wine.corefonts();
